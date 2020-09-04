@@ -1,9 +1,9 @@
 # Hailstone module
-Notebook-based [gismo module](https://github.com/ryan-williams/gismo) that computes [the Hailstone sequence](https://en.wikipedia.org/wiki/Collatz_conjecture):
+Notebook-based [gsmo module](https://github.com/runsascoded/gsmo) that computes [the Hailstone sequence](https://en.wikipedia.org/wiki/Collatz_conjecture):
 
 ![](https://latex.codecogs.com/gif.latex?hailstone%28x%29%20%3D%20%5Cleft%5C%7B%20%5Cbegin%7Barray%7D%7Brl%7D%203x&plus;1%20%26%20%5Ctext%7Bif%20%7D%20x%20%5Ctext%7B%20is%20odd%7D%20%5C%5C%20x%20/%202%20%26%20%5Ctext%7Botherwise%7D%20%5Cend%7Barray%7D%20%5Cright.)
 
-This module also demonstrates several features of [gismo modules](https://github.com/ryan-williams/gismo):
+This module also demonstrates several features of [gsmo modules](https://github.com/runsascoded/gsmo):
 - state-propagation across runs
 - early-stopping 
 - custom commit-messages
@@ -47,7 +47,7 @@ print('New value: %d' % value)
 ```
 
 ## Write the new value to the "state" path
-The [`_STATE`](./_STATE) file in this module is read by the gismo runner, and contains contents:
+The [`_STATE`](./_STATE) file in this module is read by the gsmo runner, and contains contents:
 ```
 value
 ```
@@ -62,7 +62,7 @@ with value_path.open('w') as f:
 ```
 
 ## Customize each run's commit message
-Finally, by writing to the `_MSG`, we can tell gismo what the commit message for this run should be:
+Finally, by writing to the `_MSG`, we can tell gsmo what the commit message for this run should be:
 
 
 ```python
