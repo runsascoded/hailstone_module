@@ -1,3 +1,0 @@
-name: hailstone
-mount: ../..:/gsmo
-pip_mount: /gsmo
